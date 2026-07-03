@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6741178036293479360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8430657274473472167}
+  - component: {fileID: 1331769450025251558}
+  m_Layer: 0
+  m_Name: CorsiLevel2Package
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8430657274473472167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6741178036293479360}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1331769450025251558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6741178036293479360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d80706441013241941c2d78a286557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  blockPrefab: {fileID: 1087491605597466250, guid: 824aaeae7999de24a9e540d080e5d6ed, type: 3}
+  totalBlocks: 9
+  boardWidth: 0.7
+  boardDepth: 0.35
+  minBlockSpacing: 0.12
+  statusTextPrefab: {fileID: 8619971880606833059, guid: 1884c557b66aa4047aa01090ac7ccfec, type: 3}
+  scanAreaSize: 1.5
+  gridResolution: 15
+  minTableHeight: 0.4
+  maxTableHeight: 1.2
+  spawnHeightOffset: 0.03

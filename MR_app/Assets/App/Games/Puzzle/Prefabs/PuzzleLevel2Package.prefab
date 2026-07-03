@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7987100406849959842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1012564234346230184}
+  - component: {fileID: 4427819388709150765}
+  m_Layer: 0
+  m_Name: PuzzleLevel2Package
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1012564234346230184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7987100406849959842}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4427819388709150765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7987100406849959842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb9d61ac7d69214fb2ebeeb65a69a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  iterationPrefabs:
+  - {fileID: 8704654811878486126, guid: 120231820fd94f640a02a37fce380edd, type: 3}
+  - {fileID: 6885055169710247766, guid: 0518d6aee325fee4795ebe0be34ece40, type: 3}
+  - {fileID: 5894994293622404920, guid: c477b9df292310048a8695b7890e4d44, type: 3}
+  templateRotationOffsetX: 0
+  templateRotationOffsetY: -90
+  templateRotationOffsetZ: 90
+  scanAreaSize: 1
+  gridResolution: 10
+  minTableHeight: 0.4
+  maxTableHeight: 1.2
+  spawnAreaSize: 0.5
+  pieceRadius: 0.1
+  maxSpawnAttempts: 30
+  statusTextPrefab: {fileID: 8619971880606833059, guid: 7becb234d39cfd148b2f70672fd99f5e, type: 3}

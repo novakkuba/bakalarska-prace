@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+pydantic          
+paho-mqtt
+psycopg2-binary
+sqlalchemy
+sse-starlette
+python-multipart

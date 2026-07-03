@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  # Service 1: The Database
+  db:
+    image: postgres:15-alpine
+    env_file:
+      - ./backend/.env
+    ports:
+      - "5433:5432" 
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # Service 2: The Backend 
+  backend:
+    build: ./backend
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    env_file:
+      - ./backend/.env
+    ports:
+      - "8000:8000"  
+    volumes:
+      - ./backend/app:/code/app
+    depends_on:
+      - db
+
+  # Service 3: The Frontend
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:

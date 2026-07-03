@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6988889233147107725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1219486802092191511}
+  - component: {fileID: 155351268636630943}
+  m_Layer: 0
+  m_Name: PuzzleLevel3Package
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1219486802092191511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6988889233147107725}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &155351268636630943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6988889233147107725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b8e653b7f8de434f98d5806296e2efb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  iterationPrefabs:
+  - {fileID: 2669127402547306623, guid: bbccec2a5ef1ca14987341792d2c88b9, type: 3}
+  - {fileID: 6458402309880420601, guid: ca410ca2179d961468577c06352560e2, type: 3}
+  - {fileID: 7389918783092294282, guid: 0f4c56c3ea2a03749ad0a2bd6ddabe7c, type: 3}
+  distractorsPerIteration:
+  - distractors:
+    - {fileID: 1832815687260204473, guid: defbcd672b0e9ec4b81f84c52c44b07d, type: 3}
+  - distractors:
+    - {fileID: 4039265904852170885, guid: 6a076d1ecc2d01b4c9ee1ab082cc246d, type: 3}
+  - distractors:
+    - {fileID: 9101333544118708967, guid: 1f479e614c80a4c48a21fe711bad5912, type: 3}
+  templateRotationOffsetX: 0
+  templateRotationOffsetY: -90
+  templateRotationOffsetZ: 90
+  scanAreaSize: 1
+  gridResolution: 10
+  minTableHeight: 0.4
+  maxTableHeight: 1.2
+  spawnAreaSize: 0.6
+  pieceRadius: 0.1
+  maxSpawnAttempts: 40
+  statusTextPrefab: {fileID: 8619971880606833059, guid: 7becb234d39cfd148b2f70672fd99f5e, type: 3}
